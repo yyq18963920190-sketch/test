@@ -3,26 +3,29 @@ package handoff.b;
 import fish.DaoJu;
 import fish.Fish;
 import fish.FishUI;
+import fish.ImagePool;
 import handoff.support.AbTestBase;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 /**
- * Source: backup myTest/DaoJuTest.java testDaoJuConstructor;
+ * Source: backup myTest/ImagePoolTest.java testGetImage and
+ * myTest/DaoJuTest.java collision-related cases;
  * myTest/CollisionDTest.java collisionDTest.
  * Adaptation: unified JUnit 4 assertions, 9 -> 13.5 floating-point speeds,
- * new state/null-reference assertions and second-scan scenario.
+ * historical invalid-image-index assertion and second-scan scenario.
  */
 public class BDaoJuTest extends AbTestBase {
     @Test
-    public void DSG_B_009_newPropState() {
-        // Candidate DEF-B-01: do not pre-set state, which would hide the issue.
-        DaoJu prop = new DaoJu();
-        assertEquals(80, prop.getWidth());
-        assertEquals(80, prop.getHeight());
-        assertEquals(1, prop.getType());
-        assertEquals("New DaoJu must start in the existing state", 1, prop.getState());
+    public void DSG_B_009_invalidImageIndexReturnsNull() {
+        ImagePool imagePool = new ImagePool();
+        try {
+            assertNull("Invalid image index should return null", imagePool.getImage(20));
+        } catch (ArrayIndexOutOfBoundsException exception) {
+            fail("ImagePool.getImage(20) should return null instead of throwing "
+                    + exception.getClass().getSimpleName());
+        }
     }
 
     @Test

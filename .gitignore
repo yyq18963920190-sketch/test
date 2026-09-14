@@ -45,3 +45,5 @@ src/main/resources/testData
 
 ### useless file ###
 *.txt
+# Version AB ranking fixtures with the test code.
+!src/test/resources/ab/ranking/*.txt

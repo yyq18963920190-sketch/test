@@ -1,0 +1,5 @@
+{
+  "player": {"x": 800, "y": 400, "width": 77, "height": 53, "speed": 9, "grade": 3, "state": 1},
+  "fish": [{"x": 1100, "y": 400, "width": 55, "height": 30, "grade": 4, "state": 1}],
+  "profile": {"name": "演示玩家", "skin": "default"}
+}

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="AIAdvisor-raw" tests="30" failures="4" errors="0" skipped="0"><testcase name="tests.test_ai.AITests.test_AI01_seek_right" time="0.665171" /><testcase name="tests.test_ai.AITests.test_AI02_seek_left" time="0.000774" /><testcase name="tests.test_ai.AITests.test_AI03_seek_up" time="0.000510" /><testcase name="tests.test_ai.AITests.test_AI04_seek_down" time="0.000533" /><testcase name="tests.test_ai.AITests.test_AI05_avoid_right_predator" time="0.000647" /><testcase name="tests.test_ai.AITests.test_AI06_avoid_left_predator" time="0.000552" /><testcase name="tests.test_ai.AITests.test_AI07_avoid_upper_predator" time="0.000490" /><testcase name="tests.test_ai.AITests.test_AI08_avoid_lower_predator" time="0.000466" /><testcase name="tests.test_ai.AITests.test_AI09_holdout_accuracy" time="0.060486" /><testcase name="tests.test_ai.AITests.test_AI10_small_noise" time="0.012126" /><testcase name="tests.test_ai.AITests.test_AI11_permutation" time="0.004927" /><testcase name="tests.test_ai.AITests.test_AI12_translation" time="0.000347" /><testcase name="tests.test_ai.AITests.test_AI13_repeatability" time="0.005153" /><testcase name="tests.test_ai.AITests.test_AI14_empty" time="0.000251" /><testcase name="tests.test_ai.AITests.test_AI15_dead_fish" time="0.000462" /><testcase name="tests.test_ai.AITests.test_AI16_invalid_input" time="0.047379" /><testcase name="tests.test_ai.AITests.test_AI17_nonfinite" time="0.000880" /><testcase name="tests.test_ai.AITests.test_AI18_capacity" time="0.002771" /><testcase name="tests.test_ai.AITests.test_AI19_identity_fairness" time="0.016996" /><testcase name="tests.test_ai.AITests.test_AI20_skin_fairness" time="0.000731" /><testcase name="tests.test_ai.AITests.test_AI21_text_injection" time="0.000418" /><testcase name="tests.test_ai.AITests.test_AI22_left_boundary" time="0.004042"><failure>Traceback (most recent call last):
+  File "F:\codex\2026-09-20\qi\outputs\deep-sea-growth-ai\ai-tests\tests\test_ai.py", line 198, in test_AI22_left_boundary
+    self.assertNotEqual(r['action'], 'LEFT', r)
+AssertionError: 'LEFT' == 'LEFT' : {'action': 'LEFT', 'raw_action': 'LEFT', 'confidence': 1.0, 'reason': 'model'}
+</failure></testcase><testcase name="tests.test_ai.AITests.test_AI23_other_boundaries" time="0.000688"><failure>Traceback (most recent call last):
+  File "F:\codex\2026-09-20\qi\outputs\deep-sea-growth-ai\ai-tests\tests\test_ai.py", line 208, in test_AI23_other_boundaries
+    self.assertTrue(0 &lt;= x+dx &lt;= 1823 and 0 &lt;= y+dy &lt;= 927, r)
+AssertionError: False is not true : {'action': 'RIGHT', 'raw_action': 'RIGHT', 'confidence': 1.0, 'reason': 'model'}
+</failure></testcase><testcase name="tests.test_ai.AITests.test_AI24_secondary_threat" time="0.000600"><failure>Traceback (most recent call last):
+  File "F:\codex\2026-09-20\qi\outputs\deep-sea-growth-ai\ai-tests\tests\test_ai.py", line 217, in test_AI24_secondary_threat
+    self.assertNotEqual(r['action'], 'LEFT', r)
+AssertionError: 'LEFT' == 'LEFT' : {'action': 'LEFT', 'raw_action': 'LEFT', 'confidence': 1.0, 'reason': 'model'}
+</failure></testcase><testcase name="tests.test_ai.AITests.test_AI25_no_escape" time="0.046872"><failure>Traceback (most recent call last):
+  File "F:\codex\2026-09-20\qi\outputs\deep-sea-growth-ai\ai-tests\tests\test_ai.py", line 230, in test_AI25_no_escape
+    self.assertEqual((r['action'], r['reason']), ('STAY', 'no_safe_action'))
+AssertionError: Tuples differ: ('RIGHT', 'model') != ('STAY', 'no_safe_action')
+
+First differing element 0:
+'RIGHT'
+'STAY'
+
+- ('RIGHT', 'model')
++ ('STAY', 'no_safe_action')
+</failure></testcase><testcase name="tests.test_ai.AITests.test_AI26_inactive" time="0.000601" /><testcase name="tests.test_ai.AITests.test_AI27_read_only" time="0.000412" /><testcase name="tests.test_ai.AITests.test_AI28_bad_output" time="0.000115" /><testcase name="tests.test_ai.AITests.test_AI29_model_corruption" time="0.009195" /><testcase name="tests.test_ai.AITests.test_AI30_output_contract" time="0.014725" /></testsuite>

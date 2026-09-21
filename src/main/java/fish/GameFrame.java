@@ -83,12 +83,12 @@ public class GameFrame extends JFrame {
 		menuPanel.setVisible(false);
 	}
 
-	public static void main(String[] args) {
-		ImagePool imagePool = new ImagePool();
-		GameFrame frame = new GameFrame();
-		frame.setRecord();
-		frame.getMenuPanel().getGraphics().drawImage(imagePool.getImage(2), 10, 10, 30, 30, null);
-	}
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            GameFrame frame = new GameFrame();
+            frame.setRecord();
+        });
+    }
 
 	public FishUI getFishUI() {
 		return this.fishUI;

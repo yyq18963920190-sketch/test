@@ -38,8 +38,8 @@
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>[1.8,1.9)</version>
-                                    <message>AB handoff baseline requires Maven running on JDK 8.</message>
+                                    <version>[1.8,)</version>
+                                    <message>Integrated AI project requires JDK 8 or newer.</message>
                                 </requireJavaVersion>
                                 <requireMavenVersion>
                                     <version>[3.6.3,4.0)</version>
@@ -95,6 +95,7 @@
                     <includes>
                         <include>**/handoff/a/*Test.java</include>
                         <include>**/handoff/b/*Test.java</include>
+                        <include>**/fish/ai/*Test.java</include>
                     </includes>
                     <failIfNoTests>true</failIfNoTests>
                     <testFailureIgnore>false</testFailureIgnore>

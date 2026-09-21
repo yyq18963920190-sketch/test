@@ -1,46 +1,25 @@
 package fish;
-
 import javax.imageio.ImageIO;
-import java.awt.*;
-import java.io.File;
+import java.awt.Image;
 import java.io.IOException;
+import java.net.URL;
 
+/** Cache immutable images once; load from classpath for both source and JAR launches. */
 public class ImagePool {
-    private Image[] images;
-
-    public  ImagePool(){
-        images = new Image[20];
-        for (int i=0;i<11;i++){
-            try {
-                images[i] = ImageIO.read(new File("src/main/resources/resource/"+i+".png"));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    private static final Image[] SHARED=load();
+    private Image[] images=SHARED;
+    private static Image[] load(){
+        Image[] all=new Image[20];
+        for(int i=0;i<20;i++){
+            String name=i<=10?i+".png":i<=17?"no"+(i-10)+".png":i==18?"BG1.png":"daoju.png";
+            URL url=ImagePool.class.getResource("/resource/"+name);
+            if(url==null)throw new IllegalStateException("Missing image: "+name);
+            try{all[i]=ImageIO.read(url);if(all[i]==null)throw new IOException("Unsupported image");}
+            catch(IOException ex){throw new IllegalStateException("Cannot load "+name,ex);}
         }
-        for (int i =1;i<=7;i++){
-            try {
-                images[i+10] = ImageIO.read(new File("src/main/resources/resource/no"+i+".png"));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        try {
-            images[18] = ImageIO.read(new File("src/main/resources/resource/BG1.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            images[19] = ImageIO.read(new File("src/main/resources/resource/daoju.png"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        return all;
     }
-
-    public Image getImage(int i) {
-        return images[i];
-    }
-
-    public void setImages(Image[] images) {
-        this.images = images;
-    }
+    public ImagePool(){}
+    public Image getImage(int i){return i<0||i>=images.length?null:images[i];}
+    public void setImages(Image[] images){this.images=images;}
 }

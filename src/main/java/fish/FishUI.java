@@ -1,6 +1,7 @@
 package fish;
 
 import javax.swing.*;
+import fish.ai.AiController;
 import java.awt.*;
 import java.io.*;
 import java.security.KeyStore;
@@ -15,10 +16,33 @@ public class FishUI extends JPanel
     private ImagePool images = new ImagePool();
     private JButton[] gameButton = new JButton[2];
     private int m,s;
+    private final AiController aiController = new AiController();
+    private final JButton aiMode = new JButton("AI：关闭 [H]");
+    private final JLabel aiStatus = new JLabel();
+    public AiController getAiController(){ return aiController; }
+    public void cycleAiMode(){ aiController.cycle(myFish); refreshAiStatus(); requestFocusInWindow(); }
+    public void refreshAiStatus(){
+        String[] names={"关闭", "建议", "托管"};
+        aiMode.setText("AI："+names[aiController.getMode().ordinal()]+" [H]");
+        aiStatus.setText(aiController.getStatus());
+    }
+
 
     public FishUI(){
         this.setBounds(0,0,1900,1000);
         this.setLayout(null);
+        this.setFocusable(true);
+        aiMode.setBounds(1430,45,300,45);
+        aiMode.setFont(new Font("SansSerif",Font.PLAIN,22));
+        aiMode.setFocusable(false);
+        aiMode.addActionListener(e -> cycleAiMode());
+        aiMode.setEnabled(aiController.available());
+        aiStatus.setBounds(30,50,1380,35);
+        aiStatus.setFont(new Font("SansSerif",Font.PLAIN,20));
+        aiStatus.setForeground(Color.WHITE);
+        aiStatus.setOpaque(true);
+        aiStatus.setBackground(new Color(0,40,70));
+        this.add(aiMode); this.add(aiStatus); refreshAiStatus();
 
         JButton renew = new JButton("重新开始游戏");
         JButton back = new JButton("返回主界面");
@@ -109,7 +133,8 @@ public class FishUI extends JPanel
     }
 
     public void setS(int s) {
-        this.s = s;
+        this.m += Math.floorDiv(s,60);
+        this.s = Math.floorMod(s,60);
     }
 
     public DaoJu getDaoJu() {
@@ -242,35 +267,16 @@ public class FishUI extends JPanel
         }
 
         int[][] data = getRangkingFile();
+        int candidateM=m, candidateS=s;
         for(int i=0;i<3;i++){
-            if(data[i][0]!=0&&data[i][1]!=0){
-                if (m>data[i][0]){
-                    continue;
-                }
-                else if (m< data[i][0]){
-                    int temp_m = data[i][0];
-                    int temp_s = data[i][1];
-                    data[i][0] = m;
-                    data[i][1] = s;
-                    m = temp_m;
-                    s = temp_s;
-                }
-                else if (m == data[i][0]){
-                    if (s<=data[i][1]){
-                        int temp_m = data[i][0];
-                        int temp_s = data[i][1];
-                        data[i][0] = m;
-                        data[i][1] = s;
-                        m = temp_m;
-                        s = temp_s;
-                    }else continue;
-                }
-            }else {
-                data[i][0]=m;
-                data[i][1]=s;
-                break;
+            if(data[i][0]==0 && data[i][1]==0){
+                data[i][0]=candidateM;data[i][1]=candidateS;break;
             }
-
+            if(candidateM*60+candidateS <= data[i][0]*60+data[i][1]){
+                int oldM=data[i][0],oldS=data[i][1];
+                data[i][0]=candidateM;data[i][1]=candidateS;
+                candidateM=oldM;candidateS=oldS;
+            }
         }
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter("src/main/resources/record/排行榜.txt"));

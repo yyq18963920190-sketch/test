@@ -47,3 +47,11 @@ src/main/resources/testData
 *.txt
 # Version AB ranking fixtures with the test code.
 !src/test/resources/ab/ranking/*.txt
+!src/main/resources/record/*.txt
+!src/main/resources/record0.txt
+!src/main/resources/record1.txt
+!src/main/resources/record2.txt
+!lib/*LICENSE*.txt
+!reports/*.log
+__pycache__/
+*.pyc

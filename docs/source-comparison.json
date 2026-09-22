@@ -1,0 +1,202 @@
+[
+  {
+    "path": "src/main/java/fish/ActListener.java",
+    "original_sha256": "8168eaf7b83902eb0be0aca8bc0eb0a94ac8d151e8f9047b569b8ee898efc85f",
+    "integrated_sha256": "eb794c519bcaf29f2ee5914c38e90293bbda1717094919d1ebc7344feebee740"
+  },
+  {
+    "path": "src/main/java/fish/DaoJu.java",
+    "original_sha256": "107f19c8e4f9387c5492005bfa921037a5eaed327c35d077e863e4afdd43da0d",
+    "integrated_sha256": "107f19c8e4f9387c5492005bfa921037a5eaed327c35d077e863e4afdd43da0d"
+  },
+  {
+    "path": "src/main/java/fish/Fish.java",
+    "original_sha256": "f3d951af39d19c859d3304661f8d44aff9a34ff52091b112e26baa34dfc7ca56",
+    "integrated_sha256": "f3d951af39d19c859d3304661f8d44aff9a34ff52091b112e26baa34dfc7ca56"
+  },
+  {
+    "path": "src/main/java/fish/FishUI.java",
+    "original_sha256": "896b9c197435d2abb443bc1626244cdc42da11d32becd2e9dd2a9a8815c5ddbc",
+    "integrated_sha256": "78bb3e9a316fefe063842ee2e5c1c9e30b0db33cfdf002d0c029608ccba498b5"
+  },
+  {
+    "path": "src/main/java/fish/GameFrame.java",
+    "original_sha256": "cc9a0cc5a084d676f39ce99c3457c06f0799b586fcabb05cbc1374f075191a40",
+    "integrated_sha256": "33f58f37c68d5278ddb9bfb5e40404006fd429b41999c5a8dd26d5847620af24"
+  },
+  {
+    "path": "src/main/java/fish/ImagePool.java",
+    "original_sha256": "7a288980330863091f80f2246e39bbe54b31b24aaa0702ff9b151be9687e627f",
+    "integrated_sha256": "dd4d9288531fa5020ce2df3693c3d2f6169bc6653cb54619a6c697a3a9531adc"
+  },
+  {
+    "path": "src/main/resources/record/排行榜.txt",
+    "original_sha256": "644ea7d7490f6067e8fddb96e8f43673f8ab8ad5fb8e30a5d8d37af576f3f9ae",
+    "integrated_sha256": "644ea7d7490f6067e8fddb96e8f43673f8ab8ad5fb8e30a5d8d37af576f3f9ae"
+  },
+  {
+    "path": "src/main/resources/resource/0.png",
+    "original_sha256": "376d6e777d62fa9c41f84ad482a909d9052115b952caf7f575b7788b8e7ea787",
+    "integrated_sha256": "376d6e777d62fa9c41f84ad482a909d9052115b952caf7f575b7788b8e7ea787"
+  },
+  {
+    "path": "src/main/resources/resource/1.png",
+    "original_sha256": "c4299316af4cba7abb3d0f89ca688f316c1a876f43efff746f5a31bfc902c016",
+    "integrated_sha256": "c4299316af4cba7abb3d0f89ca688f316c1a876f43efff746f5a31bfc902c016"
+  },
+  {
+    "path": "src/main/resources/resource/10.png",
+    "original_sha256": "ea9930852533c27dc0375eb54ca5e2865e1274e58a9cbbe5b3e1e5edd4ec414b",
+    "integrated_sha256": "ea9930852533c27dc0375eb54ca5e2865e1274e58a9cbbe5b3e1e5edd4ec414b"
+  },
+  {
+    "path": "src/main/resources/resource/2.png",
+    "original_sha256": "b9ec46a1f45541bcd7e152720f0a864871ee1879101e9ac08acd426e4f278b72",
+    "integrated_sha256": "b9ec46a1f45541bcd7e152720f0a864871ee1879101e9ac08acd426e4f278b72"
+  },
+  {
+    "path": "src/main/resources/resource/3.png",
+    "original_sha256": "bec422bee8d50c0a660e66f59e74788f89faf8c4c60ab665bd4f492a37f1d5ba",
+    "integrated_sha256": "bec422bee8d50c0a660e66f59e74788f89faf8c4c60ab665bd4f492a37f1d5ba"
+  },
+  {
+    "path": "src/main/resources/resource/4.png",
+    "original_sha256": "f289e93f72d5807ff0923a5a7568b35c147fe267f799d7fdecf36669b94ae3f4",
+    "integrated_sha256": "f289e93f72d5807ff0923a5a7568b35c147fe267f799d7fdecf36669b94ae3f4"
+  },
+  {
+    "path": "src/main/resources/resource/5.png",
+    "original_sha256": "a2a2e34f068d53ee83eaaac2d7bc244c9adf5b1f1a44ce71d6c7289481ce3ec8",
+    "integrated_sha256": "a2a2e34f068d53ee83eaaac2d7bc244c9adf5b1f1a44ce71d6c7289481ce3ec8"
+  },
+  {
+    "path": "src/main/resources/resource/6.png",
+    "original_sha256": "de81b2047bf981230274dd9c749255a47276ff9be836ce1d147bec0e8242a30e",
+    "integrated_sha256": "de81b2047bf981230274dd9c749255a47276ff9be836ce1d147bec0e8242a30e"
+  },
+  {
+    "path": "src/main/resources/resource/7.png",
+    "original_sha256": "0427769e92bb20136f14bc4d2438c9cc872cf775e70757a0e2ac75ea3fca04db",
+    "integrated_sha256": "0427769e92bb20136f14bc4d2438c9cc872cf775e70757a0e2ac75ea3fca04db"
+  },
+  {
+    "path": "src/main/resources/resource/8.png",
+    "original_sha256": "280234fd98c4f5b9dc588936a9131b440665e0577e3da80c17c9cc7cd2feae07",
+    "integrated_sha256": "280234fd98c4f5b9dc588936a9131b440665e0577e3da80c17c9cc7cd2feae07"
+  },
+  {
+    "path": "src/main/resources/resource/9.png",
+    "original_sha256": "c9501665ede75d0fbbb1eaf859bbcb8de262afebd4fbece1e6fb0b11f032748f",
+    "integrated_sha256": "c9501665ede75d0fbbb1eaf859bbcb8de262afebd4fbece1e6fb0b11f032748f"
+  },
+  {
+    "path": "src/main/resources/resource/BG1.png",
+    "original_sha256": "13a8328f7451bf5f70ad372c933afd83efa4c050456c51782dc152ecc4a90fa6",
+    "integrated_sha256": "13a8328f7451bf5f70ad372c933afd83efa4c050456c51782dc152ecc4a90fa6"
+  },
+  {
+    "path": "src/main/resources/resource/daoju.png",
+    "original_sha256": "71ad92d1efc77b8a1c899ce6c7706532d7cbcbf93fab72ff6ff4cdc23174783e",
+    "integrated_sha256": "71ad92d1efc77b8a1c899ce6c7706532d7cbcbf93fab72ff6ff4cdc23174783e"
+  },
+  {
+    "path": "src/main/resources/resource/no1.png",
+    "original_sha256": "095aaa90f54bf301824cd5c0b7ebb5b09c590ee9687162e2a63e47b988f0769c",
+    "integrated_sha256": "095aaa90f54bf301824cd5c0b7ebb5b09c590ee9687162e2a63e47b988f0769c"
+  },
+  {
+    "path": "src/main/resources/resource/no2.png",
+    "original_sha256": "a110c36fe5dcb9d5139e4706b7f684b9f9008c92c56c6afc9aba68605ea56a1a",
+    "integrated_sha256": "a110c36fe5dcb9d5139e4706b7f684b9f9008c92c56c6afc9aba68605ea56a1a"
+  },
+  {
+    "path": "src/main/resources/resource/no3.png",
+    "original_sha256": "bda59aa786a18259ed95096634b399a0f9e921e9082115d7b8dafc05f3894e1b",
+    "integrated_sha256": "bda59aa786a18259ed95096634b399a0f9e921e9082115d7b8dafc05f3894e1b"
+  },
+  {
+    "path": "src/main/resources/resource/no4.png",
+    "original_sha256": "5a3f877379348f005ca4dd339289768515b3cd0d877cf1d5548d35bbdf40a932",
+    "integrated_sha256": "5a3f877379348f005ca4dd339289768515b3cd0d877cf1d5548d35bbdf40a932"
+  },
+  {
+    "path": "src/main/resources/resource/no5.png",
+    "original_sha256": "7129b220d62295aa84ee8fe2036eb4b8d5148edd129f35e1e4a489f0e0df4d3e",
+    "integrated_sha256": "7129b220d62295aa84ee8fe2036eb4b8d5148edd129f35e1e4a489f0e0df4d3e"
+  },
+  {
+    "path": "src/main/resources/resource/no6.png",
+    "original_sha256": "e7f352659fc4507cbec86e1b257e2dda11359e439f473a433cb847789603fbcb",
+    "integrated_sha256": "e7f352659fc4507cbec86e1b257e2dda11359e439f473a433cb847789603fbcb"
+  },
+  {
+    "path": "src/main/resources/resource/no7.png",
+    "original_sha256": "4bb88ff5d4a3316ea6ab1b62c890d22c280f61a30e108284cd8cfda18dcab967",
+    "integrated_sha256": "4bb88ff5d4a3316ea6ab1b62c890d22c280f61a30e108284cd8cfda18dcab967"
+  },
+  {
+    "path": "src/test/java/handoff/a/AMovementTest.java",
+    "original_sha256": "015bde64be9e20085634ca9b8b7e6c0dc6921cee9faa18575b03e7778c9c11e0",
+    "integrated_sha256": "015bde64be9e20085634ca9b8b7e6c0dc6921cee9faa18575b03e7778c9c11e0"
+  },
+  {
+    "path": "src/test/java/handoff/a/AUpgradeTest.java",
+    "original_sha256": "cdcea235121281d87f017bb3e320fee91c8d39520227c97364d080c72359fb27",
+    "integrated_sha256": "cdcea235121281d87f017bb3e320fee91c8d39520227c97364d080c72359fb27"
+  },
+  {
+    "path": "src/test/java/handoff/a/AWinTest.java",
+    "original_sha256": "4619104e2628252d80b8dff6d59bb2a11148532b039ee7eb500ab9afa8f7173d",
+    "integrated_sha256": "4619104e2628252d80b8dff6d59bb2a11148532b039ee7eb500ab9afa8f7173d"
+  },
+  {
+    "path": "src/test/java/handoff/b/BDaoJuTest.java",
+    "original_sha256": "757b9217da1ca4370da33a1cea6a2559e2c9638c357ba482fc5c0e0f2dc8b5dc",
+    "integrated_sha256": "757b9217da1ca4370da33a1cea6a2559e2c9638c357ba482fc5c0e0f2dc8b5dc"
+  },
+  {
+    "path": "src/test/java/handoff/b/BFishCollisionTest.java",
+    "original_sha256": "761fcf656f0f9ed8a2681b9189ab5448480c0cb4e78f73efc3013a229d6e3d9e",
+    "integrated_sha256": "761fcf656f0f9ed8a2681b9189ab5448480c0cb4e78f73efc3013a229d6e3d9e"
+  },
+  {
+    "path": "src/test/java/handoff/b/BTimeTest.java",
+    "original_sha256": "20b524a194a58046ebd22cf64ceaa3a15a91572d0640edcfff78e15b7e56e26f",
+    "integrated_sha256": "20b524a194a58046ebd22cf64ceaa3a15a91572d0640edcfff78e15b7e56e26f"
+  },
+  {
+    "path": "src/test/java/handoff/support/AbTestBase.java",
+    "original_sha256": "607a3147ae57b5211917bb4ad5f4d877c55ffe86cd3af8fc01b84391fed4e676",
+    "integrated_sha256": "607a3147ae57b5211917bb4ad5f4d877c55ffe86cd3af8fc01b84391fed4e676"
+  },
+  {
+    "path": "src/test/resources/ab/ranking/after-empty.txt",
+    "original_sha256": "a0261a56751df80e43a7a355a9cffe056c3b61c4bdbc6f64e4c2d51a9c935ed1",
+    "integrated_sha256": "a0261a56751df80e43a7a355a9cffe056c3b61c4bdbc6f64e4c2d51a9c935ed1"
+  },
+  {
+    "path": "src/test/resources/ab/ranking/after-sorted.txt",
+    "original_sha256": "e34a573b5c4f0f2f9f76459a55ad109f3405e7c2b14b6d6d88d55cdefe7adf92",
+    "integrated_sha256": "e34a573b5c4f0f2f9f76459a55ad109f3405e7c2b14b6d6d88d55cdefe7adf92"
+  },
+  {
+    "path": "src/test/resources/ab/ranking/after-whole-minute.txt",
+    "original_sha256": "40e0d98bf6c2bd86f93ddcb7af4551eca8550de869c523d0de4cfe36e4d6c57a",
+    "integrated_sha256": "40e0d98bf6c2bd86f93ddcb7af4551eca8550de869c523d0de4cfe36e4d6c57a"
+  },
+  {
+    "path": "src/test/resources/ab/ranking/empty.txt",
+    "original_sha256": "644ea7d7490f6067e8fddb96e8f43673f8ab8ad5fb8e30a5d8d37af576f3f9ae",
+    "integrated_sha256": "644ea7d7490f6067e8fddb96e8f43673f8ab8ad5fb8e30a5d8d37af576f3f9ae"
+  },
+  {
+    "path": "src/test/resources/ab/ranking/sorted.txt",
+    "original_sha256": "d462ac73f59de9cb7fd52c6a24c59101ad26d0df9be7ca5000c17fb613342899",
+    "integrated_sha256": "d462ac73f59de9cb7fd52c6a24c59101ad26d0df9be7ca5000c17fb613342899"
+  },
+  {
+    "path": "src/test/resources/ab/ranking/whole-minute.txt",
+    "original_sha256": "ebaaff0cdbc6e2862a1a19bea028a87493b5a8a9448025991cdced42cd8f0b72",
+    "integrated_sha256": "ebaaff0cdbc6e2862a1a19bea028a87493b5a8a9448025991cdced42cd8f0b72"
+  }
+]
